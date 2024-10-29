@@ -38,3 +38,29 @@ A simple dictionary implemented in C that stores key-value pairs and allows basi
    ./dictionary
    ```
    
+### Example Usage
+
+1. **Adding Entries**:
+   ```c
+   TDictionary dict;
+   TDictionary_clearAll(&dict);
+   TDictionary_writeValue(&dict, "key1", "value1");
+   ```
+
+2. **Updating Entries**:
+   ```c
+   TDictionary_writeValue(&dict, "key1", "new_value");
+   ```
+
+3. **Deleting Entries**:
+   ```c
+   TDictionary_writeValue(&dict, "key1", NULL); // Passing NULL as value to delete entry
+   ```
+
+4. **Reading Entries**:
+   ```c
+   char buffer[DICTIONARY_ITEM_VALUE_BUFFER_SIZE];
+   TDictionary_readValue(&dict, "key1", buffer, sizeof(buffer));
+   printf("Value: %s\n", buffer);
+   ```
+   
