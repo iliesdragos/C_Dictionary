@@ -1,0 +1,11 @@
+# Ignoră folderul de configurare CLion
+.idea/
+
+# Ignoră fișierele de compilare
+cmake-build-debug/
+*.o
+*.obj
+*.exe
+
+# Ignoră fișiere temporare și CMake
+CMakeLists.txt.user
