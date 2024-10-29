@@ -64,3 +64,18 @@ A simple dictionary implemented in C that stores key-value pairs and allows basi
    printf("Value: %s\n", buffer);
    ```
    
+## Error Handling
+
+This project includes basic error handling for various cases:
+
+- **Invalid Keys**: Checks for null or empty keys.
+- **Buffer Overflow**: Ensures values do not exceed defined buffer sizes.
+- **Null Pointers**: Handles cases where pointers may be null.
+
+## Future Improvements
+
+Some potential improvements for this project include:
+
+- **Dynamic Resizing**: Allow the dictionary to expand dynamically when capacity is reached.
+- **Persistent Storage**: Implement functionality to save and load dictionary entries to and from a file.
+- **Enhanced Error Messages**: Provide more detailed error messages for debugging.
